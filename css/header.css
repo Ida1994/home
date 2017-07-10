@@ -1,0 +1,97 @@
+/*第一部分:图片logo*/
+.top-nav{width: 100%;}
+.top-lo{width:100%;}
+
+.header h1.logo
+{
+	margin: 18px 0 0 23px;
+	position: absolute;
+}
+.header h1.logo a    /*h1 .logo和h1.logo*/
+{
+	display: inline-block;
+	background: url(../img/logo.png) no-repeat;
+	width: 44px;
+	height:44px;
+	text-indent: -99em;
+}
+.header ul.icons span
+{
+	line-height: 80px;
+	color: #999999;
+	margin: 0 21.5px;
+	cursor: pointer;
+}
+/*第三部分：隐藏部分*/
+.header nav.menu
+{
+	text-align: center;
+}
+.header nav.menu li
+{
+	display: inline-block;
+}
+.header nav.menu li a
+{
+	line-height: 80px;
+	padding: 0 15px;
+	color: #7e7e7e;
+	font-size: 14px;
+}
+/*大屏幕时*/
+@media only screen and (min-width: 768px) {
+	.navbar-nav{
+		float: none;
+	}
+	ul.icons{
+		right: 10px;
+		position: absolute;
+	}	
+	.op-search-input{
+		display: none;
+	}
+	.glyphicon-search {
+		display: none;
+	}
+}
+
+/*大屏幕时*/@media screen and (min-width:767px){
+	.res-foot{
+		display: none;
+	}
+}
+/*小屏幕时*/
+@media screen and (max-width:767px)
+{
+	.header .menu li{
+		display: inline-block;
+		text-align: left;
+		width: 100%;
+		float: left;
+		ccolor: #7e7e7e;;
+	   
+	}	
+	.menu
+	{
+		display: none;
+	}
+	.header ul.icons{
+		right: -5px;
+	}
+	.header ul.icons span{
+		font-size: 25px;
+	}
+.op-search-input {
+    height: 50px;
+    line-height: 50px;
+    width: 90%;
+    border: none;
+    background: 0 0;
+    text-indent: 14px;
+    font-size: 16px;
+}
+.glyphicon-search{
+	font-size: 20px;
+}
+
+

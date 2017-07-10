@@ -1,0 +1,737 @@
+/*第一部分:图片logo*/
+li{text-decoration: none;list-style: none;}
+.top-nav{width: 100%;}
+.top-lo{width:100%;}
+
+.header h1.logo
+{
+	margin: 18px 0 0 23px;
+	position: absolute;
+}
+.header h1.logo a    /*h1 .logo和h1.logo*/
+{
+	display: inline-block;
+	background: url(../img/logo.png) no-repeat;
+	width: 44px;
+	height:44px;
+	text-indent: -99em;
+}
+.header ul.icons span
+{
+	line-height: 80px;
+	color: #999999;
+	margin: 0 21.5px;
+	cursor: pointer;
+}
+
+/*第三部分：隐藏部分*/
+.header .first-menu
+{
+	text-align: center;
+}
+.header .first-menu li
+{
+	display: inline-block;
+}
+.header .first-menu li a
+{
+	line-height: 80px;
+	padding: 0 15px;
+	color: #7e7e7e;
+	font-size: 14px;
+}
+/*大屏幕时*/
+@media only screen and (min-width: 768px) {
+	/*.navbar-nav{
+		float: none;
+	}*/
+	ul.icons{
+		right: 10px;
+		position: absolute;
+	}	
+	.op-search-input{
+		display: none;
+	}
+	.glyphicon-search {
+		display: none;
+	}
+	.first-menu li{
+	border-bottom: 0px solid red;
+    cursor: pointer;
+	}
+	/*nav.menu li a:after{
+		content: "";
+		display: block;
+		height: 4px;
+		background: red;
+		position: absolute;
+		width: 100%;
+		left: 0;
+	}	*/
+
+}
+
+/*大屏幕时*/
+@media screen and (min-width:767px){
+	.res-foot{
+		display: none;
+	}
+}
+/*小屏幕时*/
+@media screen and (max-width:767px)
+{
+	.first-menu li{
+		display: inline-block;
+		text-align: left;
+		width: 100%;
+		float: left;
+		ccolor: #7e7e7e;;
+	   
+	}	
+	.first-menu
+	{
+		display: none;
+	}
+	.header ul.icons{
+		right: -5px;
+	}
+	.header ul.icons span{
+		font-size: 25px;
+	}
+.op-search-input {
+    height: 50px;
+    line-height: 50px;
+    width: 90%;
+    border: none;
+    background: 0 0;
+    text-indent: 14px;
+    font-size: 16px;
+}
+.glyphicon-search{
+	font-size: 20px;
+}
+}
+/*第二个导航菜单样式*/
+.buy{
+	height: 100%;
+	background-color: red;
+}
+.s-m{
+	border: none;
+	background-color: #fff;
+}
+@media screen and (min-width:767px){
+	.second-buy1{
+		display: none;
+	}
+}
+/*导航下的第一个大图区域*/
+
+.Pl-pic{ 
+    width: 100%;
+    height: 100%;
+   	margin-top: 15%;
+    background: url(../img/phone.png) top center no-repeat;
+    background-size: auto 120%;
+    }
+   .abs-fadeout{
+    text-align: center;
+    font-size: 34px;
+    margin-left: 50%;
+    margin-top: -95%;
+ }
+.video-pic{
+	background-size: cover;
+	background-image: url(../img/video-pic.jpg);
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+.video-pic a{
+	display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(../img/bofang.png) center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    transition: all .6s ease;
+   }
+/*   第一部分轮播*/   
+	.lunbo-text{
+ 
+    margin-top: 15%;
+    margin-left: 5%;
+    width: 30%;
+    float: left;
+    }
+ 	.lunbo-text li{display: none;}
+	.p-text{
+	color: #000;
+    line-height: 26px;
+    margin-bottom: 0;
+    opacity: 0.5;
+    margin-top: 20px;	
+    font-size:16px;
+	}
+	.lunbo-text .nav-dot li {
+    display: inline-block;
+    width: 50px;
+    padding-top: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    background: black;
+}
+   .first-lunbo{
+   	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: transparent;background-position: center;
+   }
+   .phone-box{
+    width: 30.57292%;
+   }
+.ant2-o li{height: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: transparent;
+			background-size: contain;
+			list-style: none;
+			}
+/*轮播下面的图*/
+.second-pic{
+	width: 100%;
+    height: 36.45833vw;
+    background: url(../img/lens.jpg) center no-repeat;
+    background-size: cover;
+}
+.pic-simg{
+	text-align: center;
+	border: none;
+}
+.pic-simg img{height: 50px;width: 50px;}
+.pic-simg p{font-size: 1.6rem;
+			color: #000;
+    		line-height: 26px;
+    		margin-bottom: 0;
+   		 	opacity: .5;}
+.swiper-container ul li{
+	float: left;
+	width:100%;
+}
+.swiper-container ul li img{
+vertical-align: middle;}
+.arrow-prev{
+	background-repeat: no-repeat;
+    background-image: url(../img/pre.png);
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    height: 18%;
+    width: 6%;
+    display: block;
+    margin-top: 20%;
+    z-index: 2;
+    margin-left: 4%;
+}
+.arrow-next{
+	background-repeat: no-repeat;
+    background-image: url(../img/next.png);
+    background-color: transparent;
+    display: block;
+    position: absolute;
+   	height: 18%;
+    width: 6%;
+    margin-top: 21.5%;
+    right: 3%;
+    z-index: 2;
+    }
+.ant2 .nav-dot li {
+    display: inline-block;
+    width: 50px;
+    padding-top: 5px;
+    cursor: pointer;
+    background: black;
+}
+.swiper-container li img{
+    height: 49vw;
+}
+.second-lunbo .nav-dot {
+	height: 1%;
+}
+.second-lunbo .nav-dot li{
+	width: 4%;
+    height: 40%;
+    background: black;
+    margin-right: 1%;
+    display: inline-block;
+    float: left;
+}
+/*第三段轮播*/
+.third-l{
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-color: transparent;}
+   .third-l .main-box{
+   	 max-width: 1200px;
+    width: 100%;
+    position: absolute;
+    z-index: 15;
+   
+    margin-left: 5%;
+    color: #fff;
+   }
+.item-1{
+	
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    margin-left: -6%;
+    height: 100%;
+}
+.item-2{
+	background-image: url(../img/phone3.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    margin-left: -6%;
+    height: 100%;
+}
+.item-3{
+	background-image: url(../img/phone4.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    margin-left: -6%;
+    height: 100%;
+}
+.item-4 .img-box .img-silent {
+	background-image: url(../img/phone2-silent.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    margin-left: -6%;
+    height: 100%;
+}
+.item-4 .img-box .img-priority{
+	background-image: url(../img/phone2-wuyao.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    margin-left: -6%;
+    height: 100%;
+}
+.item-4 .img-box .img-all{
+	background-image: url(../img/phone2-xiang.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    margin-left: -6%;
+    height: 100%;
+}
+.item-4 .ant5 ul li{
+	display: inline-block;
+    opacity: 0.5;
+    margin-right: 3rem;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: center no-repeat;
+    background-size: cover;
+  
+}
+.ant4{
+	position: absolute;
+	margin-bottom: 10%;
+}
+.sub-box{
+	position: absolute;
+  
+    margin-left: 2%;
+}
+.sub-img{
+   
+    margin-left: 2%;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    color: #fff;
+    
+    }
+.ant6{
+	position: absolute;
+  
+    width: 100%;
+    z-index: 99;
+    bottom: 8%;
+}
+	.ant6 .nav-dot{
+	position: absolute;
+    z-index: 15;
+    width: 100%;  
+    margin-left: 2%;
+    }
+    .ant6 .nav-dot li{
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    margin-right: 20px;
+    cursor: pointer;
+    background: #fff;
+    opacity: 0.5;
+    }
+/*第三段轮播下面的图片*/
+.third-pic-top{
+	background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center top;
+    background-size: 100% auto;
+    background-image: url(../img/pic-top1.jpg);
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+    top: 0;
+    background-color: #ededed;  
+}
+.third-pic-top h2{
+	    left: 18.64583%;
+	    position: absolute;
+    	top: 50%;
+    	margin-bottom: 0;
+    	margin-top: -62px;
+    	z-index: 2;
+    	font-size: 30px;
+       font-weight: 400;
+        left: 21.64583%;
+}
+.third-pic-top .glyphicon-menu-right{
+    left: 24.64583%;
+
+    margin-top: 14%;
+    }
+/*.third-pic-top .glyphicon-menu-left{
+    left: 24.64583%;
+    display: block;
+    margin-top: 14%;
+    }*/
+.third-pic-bottom{
+	background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center bottom;
+    background-size: 100% auto;
+    background-image: url(../img/pic-bottom1.jpg);
+    position: relative;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    top: 0;   
+}
+.third-pic-bottom h2{
+    right: 18.64583%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-bottom: 0;
+    margin-top: -62px;
+    z-index: 2;
+    font-size: 30px;
+    font-weight: 400;
+    }
+.third-pic-bottom .glyphicon-menu-right{
+	margin-top: 14%;
+    margin-left: 78%;
+}
+/*品质检测样式 */
+.pinzhi{
+    color: #fff;
+    background-color: #100f10;
+    text-align: center;}
+    
+.zhedie-text .row{
+    width: 1020px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 45px 2%;
+    }   
+  .zhedie-text .row>div {
+    flex-basis: 20%;
+    text-align: left;
+    font-size: 16px;
+}
+.zhedie-text .sub-title{color:#888788;}
+/*极速闪充 */
+.jisu-left .main-box ol li{
+   	display: inline-block;
+    width: 57px;
+    height: 3px;
+    margin-top: 18%;
+    margin-left: -10%;
+    margin-right: 15%;
+    cursor: pointer;
+    background: black;
+    opacity: 0.5;
+    }
+.jisu-right .ant1 li{   
+	display: inline-block;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+    width: 32%;   
+    opacity: 0.5;
+    }
+.jisu-right .ant3 .line-item{
+	background: left bottom no-repeat;
+	background-size: auto 100%;
+	height: 100%;
+	width: 100%;
+}
+.jisu-right .ant5 li{
+    display: inline-block;
+    margin-right: 4rem;
+    font-size: 16px;
+   	
+    } 
+.jisu-right .p-text{
+    color: #000;
+    line-height: 26px;
+    margin-bottom: 0;
+    opacity: .5;
+    font-size: 14px;
+    margin-top: 11%;
+    }
+   .jisuitem-2{
+   	background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/smart-bg2.jpg);
+    background-size: cover;
+    background-color: transparent;
+   }
+ 	.jisuitem-3{
+	background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/cooler-bg.jpg);
+    background-size: cover;
+    background-color: transparent;
+    } 
+ .jisuitem-2 .main-box ol li{
+ 	background: #fff;
+ }  
+ .jisuitem-3 .main-box ol li{
+ 	background: #fff;
+ }  
+/* 8GB大内存骁龙部分*/
+.bigpic .big-pic{
+	width: 100%;
+    height: 100%;
+    background-image:url(../img/phone-bg.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    position: relative;
+}
+.part-right{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;}
+/*<!--监控这一部分-->*/
+.lunb-line .ant2{
+    border-bottom: 2px solid #d7d7d7;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    height: 50px;  margin-left: 30%;}
+    
+.lunb-line .ant2 li {
+    height: calc(100% + 2px);
+    display: inline-block;
+    margin: 0 3rem -2px 0;
+    opacity: .3;
+    cursor: pointer;
+    color: #000;
+    margin-right: 6rem;
+    padding-top: 1rem;
+  
+}
+.lunb-content .img-box{
+	background-repeat: no-repeat;
+    background-position: center;
+    
+    background-size: cover;
+    background-color: transparent;
+}
+.img-content .mode-yellow{
+	background-repeat: no-repeat;
+    background-position: center;
+    
+    background-size: cover;
+    background-color: transparent;
+}
+.img-content .mode-gray{
+	background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: cover;
+    background-color: transparent;
+}
+.img-box .action-box{
+    position: absolute;
+    width: 23%;
+    z-index: 222;
+    margin-top: -6%;
+    margin-left: 40%;}
+/*<!-- 网络部分 -->    */
+.wangluo .w-luo .w-l{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    }
+.w-luo .item-content{
+    margin-left: 56%;
+   	padding-top: 16%; 
+    color: #fff;
+    }
+ .w-l .item-content .nav-dot li {
+    display: inline-block;
+    width: 15%;
+    height: 3px;
+    margin-right: 20px;
+    cursor: pointer;
+    background: #fff;
+    opacity: 0.5;
+    }
+/*最后的轮播*/
+.last-text .l-t-left .nav-black li{
+	display: inline-block;
+    width: 50px;
+    height: 5px;
+   
+    margin-right: 20px;
+    cursor: pointer;
+    background: black;
+    opacity: 0.5;
+}
+.last-text .l-t-right{
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+}
+/*OnePlus5响应式样式*/
+@media only screen and (min-width: 780px) {
+	 .Pl-pic{
+	 	margin-top: 21%;
+	 }
+	  .first-lunbo  .ant1{
+	 padding-top:5rem;
+	 }
+	 .second-pic{
+	     margin-top: 46%;
+	 }
+	  .second-pic{
+	     margin-top: 0;
+	 }
+	  .swiper-wrap {
+	 height: 71%;}
+	  .second-lunb-pinc{
+	 height: 2800px;}
+	 
+	  .item-1 {
+	 background-image: url(../img/phone1.png);}
+	 .thrid-lunbo{
+    height: 770px;}
+      .third-l .main-box{
+     margin-top: 7.96296%;}
+     .sub-box {
+    
+      margin-top: 33%;
+   
+}
+.ant6 .nav-dot{
+    margin-top: -1%;
+}
+.sub-img {
+
+    height: 100%;
+}
+	.sub-box .ant5{
+     margin-top: 9%;
+
+} 
+}
+@media only screen and (min-width: 100px) and (max-width: 780px) {
+	 .Pl-pic{
+	 	margin-top: 59%;
+	
+	 }
+	 .abs-fadeout{
+	top: -94%;
+	position: relative;  
+	 }
+	 .first-lunbo  .ant1{
+	 padding-top:0;
+	 }
+	.lunbo-text {
+    margin-top: 49%;
+    margin-left: 5%;
+    width: 88%;}
+	 
+	 .second-pic{
+	     margin-top: 52%;
+	 }
+	 .text-box{display: none;}
+	 .swiper-wrap {
+	 height: 18%;}
+	 .second-lunb-pinc{
+	 height: 1000px;}
+	 .item-1 {
+    background-image: url(../img/phone1-m.jpg);	 }
+    .thrid-lunbo{
+    height: 900px;}
+    .third-l .main-box{
+        margin-top: 116.96296%;
+    }
+    .sub-box {  
+    margin-top: 169%;   
+}
+.ant6 .nav-dot{
+    margin-top: 6%;
+}
+.sub-img {
+
+    height: 41%;
+}
+.sub-box .ant5{
+    margin-top: 16%;
+
+}
+}

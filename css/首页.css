@@ -1,0 +1,271 @@
+
+*{
+	font-family: "Helvetica Neue",Arial,"Microsoft Yahei",Helvetica,sans-serif,Lato;
+    font-size: 14px;
+    margin:0;
+    padding:0;
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+     color: black;
+}
+a:hover, a:focus {
+    color: black;
+text-decoration:none
+}
+dl, li, ol, ul {
+    list-style: none;
+}
+/*头部样式 */
+body{
+	position: relative;
+}
+
+.top-img {
+	float:left;
+	overflow: hidden;
+}
+.top-img img{ width: 100%;}   
+/*第一个三图*/
+.middle-img{
+	height: 300px;	
+	width: 100%;
+}
+.mid-pic .img-bg{
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	background-size: cover;
+}
+.mi-pic{
+	padding: 0;
+}
+.mid-pic h4{suotu
+	font-size:24px;
+    z-index: 2;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 5%;
+    color: #fff;
+}
+.mid-pic{height: 300px;}
+.mid-pic a{display: block;    width: 100%;
+    height: 100%;}
+.mid-pic{
+ border: none;
+ padding: 0;
+}
+.mi-pic{height: 300px;}   
+/*  bottom样式大屏幕*/
+@media only screen and (min-width: 768px) {
+.bottom-img{
+	float:left;
+	overflow: hidden;
+	position: relative;
+}
+.bottom-img img{width: 100%;}
+.BuFonT{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -10px;
+	text-align: center;;
+}
+.BuFonT .h3{
+	font-size: 48px;
+	color: #fff;
+	
+}
+.wo-btn{
+	background: 0 0;
+	border: 1px solid #fff;
+	color: #fff;
+	width: 150px;
+    height: 50px;
+    font-size: 14px;
+}
+}
+/*  bottom样式小屏幕*/
+@media screen and (max-width:767px){
+.bottom-img{
+	float:left;
+	position: relative;
+	background-position: center center;
+}
+.BuFonT{
+	position: absolute;
+	margin-top: -35%;
+	width: 100%;	
+}
+.BuFonT .h3{
+	font-size: 24px;
+	color: #fff;
+	float: left;
+	text-align: center;
+}
+.wo-btn{
+	background: 0 0;
+	border: 1px solid #fff;
+	color: #fff;
+	width: 150px;
+    height: 50px;
+    font-size: 14px;
+    float: left;
+    margin-left: 35%;
+}
+}
+/*缩略图样式*/
+.suotu{
+	height: 550px;
+    width: 100%;
+    padding: 7% 0;
+}
+
+.dantu{background: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  }
+/*.dantu:hover{
+   height: 95%;
+  }*/
+ .suotu .dantu .suotu-pic:hover{
+ 	width: 101%;
+ 	height: 101%;
+ 	box-shadow: 10px 10px 5px #888888;
+ }
+ 
+.suotu-pic{
+	border:none;
+	padding:0 ;
+}
+
+.suotu-pic img{
+	width: 100%;
+}
+/*底部图片区*/
+.footer-top{
+	height: 184px;
+}
+.f-t{height: 100%;}
+.foot-suo{height: 100%;}
+.foot-suo{
+	height: 100%;
+       line-height: 184px;
+       text-align: center;}
+.foot-suo a{
+	display: block;
+	height: 100%;
+    color: #565b62;
+}
+.foot-suo .i-1h-send {
+    background-image: url(../img/foot-img.png);
+    background-position: 0 -80px;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+}
+.foot-suo .i-7s-return {
+    background-image: url(../img/foot-img.png);
+    background-position: 0 -240px;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+}
+.foot-suo .i-15s-return {
+    background-image: url(../img/foot-img.png);
+    background-position: 0 0;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+}
+.foot-suo .i-30s-swap {
+    background-image: url(../img/foot-img.png);
+    background-position: 0 -160px;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+}
+@media screen and (max-width:767px){
+	
+	.foot-suo{
+		float: left;
+	}
+}
+/*底部大屏幕样式 */
+.footer-wenzi .tit{
+	padding-bottom: 20px;
+    font-size: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+.footer-wenzi a{
+	line-height: 30px;
+    font-size: 14px;
+    color: #666;
+    }
+   .phone-f{
+   	text-align: right;
+   }
+   .phone-f a{
+    display: block;
+    font-size: 35px;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: default;
+    }
+    .bt-f{
+    width: 45%;
+    coloer: #fff;
+    background-color: #fff;
+     border: 1px solid #000;
+     border-radius: 0;    
+     }
+     @media screen and (max-width:767px){    	
+    .footer-list{display: none;}
+    .nav-foot{margin-bottom:0px;}
+    .navbar-toggle{border:none;}
+    .nav-foot a{margin-left: 15px}
+    .arrow-down{
+     	background-size: 14px auto;
+    	width: 14px;
+    	height: 8px;
+    	display: inline-block;
+    	background-image:url(../img/index.png); 
+    	background-repeat: no-repeat;
+    	border: none;
+    	background-position: 0 -8px;
+       	
+     	} 
+     	.arrow-up {
+     	background-size: 14px auto;
+     	width: 14px;
+    	height: 8px;
+    	background-repeat: no-repeat;
+    	/*position: absolute;
+    	right: 20px;
+    	top: 50%;
+    	margin-top: -4px;*/
+    	display: inline-block;
+    	background-position: 0 0;
+    	background-image:url(../img/index.png);  
+}  	
+.bt-foot{
+	 width: 100%;
+     coloer: #fff;
+     background-color: #fff;
+     border: 1px solid #000;
+     border-radius: 0;    
+}   .bottom-f{
+	overflow: hidden;
+}
+     }
+    .bottom-pic span{
+    	display: inline-block;
+    }
+    @media screen and (max-width:767px){
+    	.bottom-pic{display: none;}
+    }
+     @media screen and (min-width:767px){
+    	.res-bto{display: none;}
+    }
